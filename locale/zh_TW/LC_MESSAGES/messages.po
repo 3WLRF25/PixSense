@@ -1,0 +1,366 @@
+# Chinese translations for v1.0.0 package
+# v1.0.0 套件的正體中文翻譯.
+# Copyright (C) 2025 THE v1.0.0'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the v1.0.0 package.
+# 3WLRF25 tlms3wlrf25@outlook.com, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-25 21:39+0800\n"
+"PO-Revision-Date: 2025-10-25 23:08+0800\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: main.py:29 main.py:301
+msgid "PixSense - Pixiv图片分类整理工具"
+msgstr "PixSense - Pixiv圖片分類整理工具"
+
+#: main.py:79
+#, python-format
+msgid "已清空日志文件: %s"
+msgstr "已清空日誌檔案: %s"
+
+#: main.py:81
+#, python-format
+msgid "清空日志文件失败: %s"
+msgstr "清空日誌檔案失敗: %s"
+
+#: main.py:87
+msgid "源图片目录"
+msgstr "來源圖片目錄"
+
+#: main.py:97 main.py:114
+msgid "选择目录"
+msgstr "選擇目錄"
+
+#: main.py:104
+msgid "目标目录"
+msgstr "目標目錄"
+
+#: main.py:121
+msgid "文件名规则 (用于提取ID)"
+msgstr "檔案名稱規則 (用於提取ID)"
+
+#: main.py:123
+#, python-brace-format
+msgid "如: {id} 或 {title}▪︎{id}｜{user}等"
+msgstr "如: {id} 或 {title}▪︎{id}｜{user}等"
+
+#: main.py:129
+msgid "ID提取正则表达式"
+msgstr "ID提取正規表示式"
+
+#: main.py:131
+msgid "如: (\\d+) 或 id_(\\d+)"
+msgstr "如: (\\d+) 或 id_(\\d+)"
+
+#: main.py:137
+msgid "文件夹结构"
+msgstr "資料夾結構"
+
+#: main.py:139
+#, python-brace-format
+msgid "如: {user}/{title} 或 {user_id}/{date}/{tags[0]}"
+msgstr "如: {user}/{title} 或 {user_id}/{date}/{tags[0]}"
+
+#: main.py:145
+msgid "Pixiv Cookie (PHPSESSID=...)"
+msgstr "Pixiv Cookie (PHPSESSID=...)"
+
+#: main.py:154
+msgid "支持的图片扩展名 (逗号分隔)"
+msgstr "支援的圖片副檔名 (逗號分隔)"
+
+#: main.py:156
+msgid "如: .jpg, .png, .jpeg"
+msgstr "如: .jpg, .png, .jpeg"
+
+#: main.py:162
+msgid "覆盖已存在的文件"
+msgstr "覆蓋已存在的檔案"
+
+#: main.py:168
+msgid "最大重试次数"
+msgstr "最大重試次數"
+
+#: main.py:175
+msgid "基础延迟(秒)"
+msgstr "基礎延遲(秒)"
+
+#: main.py:182
+msgid "最大延迟(秒)"
+msgstr "最大延遲(秒)"
+
+#: main.py:189
+msgid "指数退避"
+msgstr "指數退避"
+
+#: main.py:196
+msgid "启用后，每次重试的等待时间会指数级增长（基础延迟×2^重试次数）"
+msgstr "啟用後，每次重試的等待時間會指數級增長（基礎延遲×2^重試次數）"
+
+#: main.py:200
+msgid "随机抖动"
+msgstr "隨機抖動"
+
+#: main.py:207
+msgid "启用后，会在重试延迟上添加随机时间（0-1秒），避免多个请求同时重试"
+msgstr "啟用後，會在重試延遲上添加隨機時間（0-1秒），避免多個請求同時重試"
+
+#: main.py:211
+msgid "429重试"
+msgstr "429重試"
+
+#: main.py:218
+msgid "启用后，当收到429(请求过多)响应时会自动等待并重试"
+msgstr "啟用後，當收到429(請求過多)回應時會自動等待並重試"
+
+#: main.py:222
+msgid "超时重试"
+msgstr "逾時重試"
+
+#: main.py:229
+msgid "启用后，当请求超时会自动重试"
+msgstr "啟用後，當請求逾時會自動重試"
+
+#: main.py:233
+msgid "线程数"
+msgstr "執行緒數"
+
+#: main.py:243
+msgid "开始整理"
+msgstr "開始整理"
+
+#: main.py:249
+msgid "保存配置"
+msgstr "儲存設定"
+
+#: main.py:255
+msgid "记录日志到文件"
+msgstr "記錄日誌到檔案"
+
+#: main.py:260
+msgid "日志文件路径"
+msgstr "日誌檔案路徑"
+
+#: main.py:266
+msgid "日志级别"
+msgstr "日誌層級"
+
+#: main.py:280
+msgid "启动时清空日志"
+msgstr "啟動時清空日誌"
+
+#: main.py:285
+msgid "手动清空日志"
+msgstr "手動清空日誌"
+
+#: main.py:292
+msgid "标签连接符"
+msgstr "標籤連接符"
+
+#: main.py:294
+msgid "如: , 或 -"
+msgstr "如: , 或 -"
+
+#: main.py:308
+msgid "标签配置:"
+msgstr "標籤設定:"
+
+#: main.py:314
+msgid "重试配置:"
+msgstr "重試設定:"
+
+#: main.py:339
+msgid "日志输出:"
+msgstr "日誌輸出:"
+
+#: main.py:384
+msgid "配置已保存!"
+msgstr "設定已儲存!"
+
+#: main.py:386
+#, python-format
+msgid "保存配置失败: %s"
+msgstr "儲存設定失敗: %s"
+
+#: main.py:411
+#, python-format
+msgid "无法写入日志文件: %s"
+msgstr "無法寫入日誌檔案: %s"
+
+#: main.py:421
+#, python-format
+msgid "加载配置失败: %s"
+msgstr "載入設定失敗: %s"
+
+#: main.py:430
+msgid "错误: 源目录无效或未设置"
+msgstr "錯誤: 來源目錄無效或未設定"
+
+#: main.py:434
+msgid "错误: 目标目录未设置"
+msgstr "錯誤: 目標目錄未設定"
+
+#: main.py:438
+msgid "警告: 未设置Pixiv Cookie，可能无法获取详细信息"
+msgstr "警告: 未設定Pixiv Cookie，可能無法取得詳細資訊"
+
+#: main.py:443
+msgid "开始扫描源目录..."
+msgstr "開始掃描來源目錄..."
+
+#: main.py:450
+#, python-format
+msgid "找到 %d 个图片文件"
+msgstr "找到 %d 個圖片檔案"
+
+#: main.py:457 main.py:525
+#, python-format
+msgid "处理文件 %s 时出错: %s"
+msgstr "處理檔案 %s 時出錯: %s"
+
+#: main.py:459
+msgid "整理完成!"
+msgstr "整理完成!"
+
+#: main.py:465
+#, python-format
+msgid "处理文件: %s"
+msgstr "處理檔案: %s"
+
+#: main.py:469
+#, python-format
+msgid "无法从文件名 %s 中提取ID"
+msgstr "無法從檔案名稱 %s 中提取ID"
+
+#: main.py:472
+#, python-format
+msgid "提取到ID: %s"
+msgstr "提取到ID: %s"
+
+#: main.py:480
+#, python-format
+msgid "作品信息格式无效: %s"
+msgstr "作品資訊格式無效: %s"
+
+#: main.py:484
+msgid "无标题"
+msgstr "無標題"
+
+#: main.py:485
+msgid "未知用户"
+msgstr "未知使用者"
+
+#: main.py:514
+#, python-format
+msgid "文件已存在，跳过: %s"
+msgstr "檔案已存在，跳過: %s"
+
+#: main.py:517
+#, python-format
+msgid "文件路径：%s"
+msgstr "檔案路徑：%s"
+
+#: main.py:518
+#, python-format
+msgid "目标路径：%s"
+msgstr "目標路徑：%s"
+
+#: main.py:522
+#, python-format
+msgid "文件已复制到: %s"
+msgstr "檔案已複製到: %s"
+
+#: main.py:527
+#, python-format
+msgid ""
+"错误详情:\n"
+"%s"
+msgstr ""
+"錯誤詳情:\n"
+"%s"
+
+#: main.py:548
+msgid "正则表达式无效，尝试使用自定义正则表达式"
+msgstr "正規表示式無效，嘗試使用自訂正規表示式"
+
+#: main.py:558
+msgid "自定义正则表达式无效"
+msgstr "自訂正規表示式無效"
+
+#: main.py:566
+msgid "未设置Pixiv Cookie"
+msgstr "未設定Pixiv Cookie"
+
+#: main.py:585
+#, python-format
+msgid "等待 %.2f 秒后重试..."
+msgstr "等待 %.2f 秒後重試..."
+
+#: main.py:617
+#, python-format
+msgid "API请求异常: %s: %s"
+msgstr "API請求異常: %s: %s"
+
+#: main.py:639
+#, python-format
+msgid "请求过于频繁，Pixiv要求等待 %d 秒 (HTTP 429)"
+msgstr "請求過於頻繁，Pixiv要求等待 %d 秒 (HTTP 429)"
+
+#: main.py:648
+#, python-format
+msgid "服务器错误: HTTP %d"
+msgstr "伺服器錯誤: HTTP %d"
+
+#: main.py:650
+#, python-format
+msgid "客户端错误: HTTP %d"
+msgstr "用戶端錯誤: HTTP %d"
+
+#: main.py:657
+msgid "API返回数据格式无效"
+msgstr "API回傳資料格式無效"
+
+#: main.py:660
+#, python-format
+msgid "API错误: %s"
+msgstr "API錯誤: %s"
+
+#: main.py:660
+msgid "未知错误"
+msgstr "未知錯誤"
+
+#: main.py:664
+msgid "API返回无效的JSON数据"
+msgstr "API回傳無效的JSON資料"
+
+#: main.py:669
+msgid "无响应"
+msgstr "無回應"
+
+#: main.py:671
+#, python-format
+msgid "获取作品 %s 信息失败 (最终状态: %s)"
+msgstr "取得作品 %s 資訊失敗 (最終狀態: %s)"
+
+#: main.py:678
+msgid "无效的作品信息数据"
+msgstr "無效的作品資訊資料"
+
+#: main.py:733
+#, python-format
+msgid "警告: 配置中要求的变量 %s 不存在于API返回数据中"
+msgstr "警告: 設定中要求的變數 %s 不存在於API回傳資料中"
+
+#: main.py:750
+#, python-format
+msgid "构建路径失败: %s"
+msgstr "建構路徑失敗: %s"

@@ -1,0 +1,365 @@
+# English translations for v1.0.0 package.
+# Copyright (C) 2025 THE v1.0.0'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the v1.0.0 package.
+# 3WLRF25 tlms3wlrf25@outlook.com, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-25 21:39+0800\n"
+"PO-Revision-Date: 2025-10-25 22:45+0800\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: main.py:29 main.py:301
+msgid "PixSense - Pixiv图片分类整理工具"
+msgstr "PixSense - Pixiv Image Organizer"
+
+#: main.py:79
+#, python-format
+msgid "已清空日志文件: %s"
+msgstr "Cleared log file: %s"
+
+#: main.py:81
+#, python-format
+msgid "清空日志文件失败: %s"
+msgstr "Failed to clear log file: %s"
+
+#: main.py:87
+msgid "源图片目录"
+msgstr "Source image directory"
+
+#: main.py:97 main.py:114
+msgid "选择目录"
+msgstr "Select directory"
+
+#: main.py:104
+msgid "目标目录"
+msgstr "Target directory"
+
+#: main.py:121
+msgid "文件名规则 (用于提取ID)"
+msgstr "Filename pattern (for ID extraction)"
+
+#: main.py:123
+#, python-brace-format
+msgid "如: {id} 或 {title}▪︎{id}｜{user}等"
+msgstr "e.g.: {id} or {title}▪︎{id}｜{user}"
+
+#: main.py:129
+msgid "ID提取正则表达式"
+msgstr "ID extraction regex"
+
+#: main.py:131
+msgid "如: (\\d+) 或 id_(\\d+)"
+msgstr "e.g.: (\\d+) or id_(\\d+)"
+
+#: main.py:137
+msgid "文件夹结构"
+msgstr "Folder structure"
+
+#: main.py:139
+#, python-brace-format
+msgid "如: {user}/{title} 或 {user_id}/{date}/{tags[0]}"
+msgstr "e.g.: {user}/{title} or {user_id}/{date}/{tags[0]}"
+
+#: main.py:145
+msgid "Pixiv Cookie (PHPSESSID=...)"
+msgstr "Pixiv Cookie (PHPSESSID=...)"
+
+#: main.py:154
+msgid "支持的图片扩展名 (逗号分隔)"
+msgstr "Supported image extensions (comma separated)"
+
+#: main.py:156
+msgid "如: .jpg, .png, .jpeg"
+msgstr "e.g.: .jpg, .png, .jpeg"
+
+#: main.py:162
+msgid "覆盖已存在的文件"
+msgstr "Overwrite existing files"
+
+#: main.py:168
+msgid "最大重试次数"
+msgstr "Max retry attempts"
+
+#: main.py:175
+msgid "基础延迟(秒)"
+msgstr "Base delay (seconds)"
+
+#: main.py:182
+msgid "最大延迟(秒)"
+msgstr "Max delay (seconds)"
+
+#: main.py:189
+msgid "指数退避"
+msgstr "Exponential backoff"
+
+#: main.py:196
+msgid "启用后，每次重试的等待时间会指数级增长（基础延迟×2^重试次数）"
+msgstr "When enabled, wait time grows exponentially (base delay × 2^retry count)"
+
+#: main.py:200
+msgid "随机抖动"
+msgstr "Random jitter"
+
+#: main.py:207
+msgid "启用后，会在重试延迟上添加随机时间（0-1秒），避免多个请求同时重试"
+msgstr "Adds random time (0-1s) to retry delay to prevent simultaneous retries"
+
+#: main.py:211
+msgid "429重试"
+msgstr "429 Retry"
+
+#: main.py:218
+msgid "启用后，当收到429(请求过多)响应时会自动等待并重试"
+msgstr "Automatically waits and retries on 429 (Too Many Requests) responses"
+
+#: main.py:222
+msgid "超时重试"
+msgstr "Timeout retry"
+
+#: main.py:229
+msgid "启用后，当请求超时会自动重试"
+msgstr "Automatically retries on request timeout"
+
+#: main.py:233
+msgid "线程数"
+msgstr "Thread count"
+
+#: main.py:243
+msgid "开始整理"
+msgstr "Start organizing"
+
+#: main.py:249
+msgid "保存配置"
+msgstr "Save configuration"
+
+#: main.py:255
+msgid "记录日志到文件"
+msgstr "Log to file"
+
+#: main.py:260
+msgid "日志文件路径"
+msgstr "Log file path"
+
+#: main.py:266
+msgid "日志级别"
+msgstr "Log level"
+
+#: main.py:280
+msgid "启动时清空日志"
+msgstr "Clear logs on startup"
+
+#: main.py:285
+msgid "手动清空日志"
+msgstr "Clear logs manually"
+
+#: main.py:292
+msgid "标签连接符"
+msgstr "Tag separator"
+
+#: main.py:294
+msgid "如: , 或 -"
+msgstr "e.g.: , or -"
+
+#: main.py:308
+msgid "标签配置:"
+msgstr "Tag configuration:"
+
+#: main.py:314
+msgid "重试配置:"
+msgstr "Retry configuration:"
+
+#: main.py:339
+msgid "日志输出:"
+msgstr "Log output:"
+
+#: main.py:384
+msgid "配置已保存!"
+msgstr "Configuration saved!"
+
+#: main.py:386
+#, python-format
+msgid "保存配置失败: %s"
+msgstr "Failed to save configuration: %s"
+
+#: main.py:411
+#, python-format
+msgid "无法写入日志文件: %s"
+msgstr "Failed to write log file: %s"
+
+#: main.py:421
+#, python-format
+msgid "加载配置失败: %s"
+msgstr "Failed to load configuration: %s"
+
+#: main.py:430
+msgid "错误: 源目录无效或未设置"
+msgstr "Error: Invalid or unset source directory"
+
+#: main.py:434
+msgid "错误: 目标目录未设置"
+msgstr "Error: Target directory not set"
+
+#: main.py:438
+msgid "警告: 未设置Pixiv Cookie，可能无法获取详细信息"
+msgstr "Warning: Pixiv Cookie not set, may fail to get details"
+
+#: main.py:443
+msgid "开始扫描源目录..."
+msgstr "Scanning source directory..."
+
+#: main.py:450
+#, python-format
+msgid "找到 %d 个图片文件"
+msgstr "Found %d image files"
+
+#: main.py:457 main.py:525
+#, python-format
+msgid "处理文件 %s 时出错: %s"
+msgstr "Error processing file %s: %s"
+
+#: main.py:459
+msgid "整理完成!"
+msgstr "Organization completed!"
+
+#: main.py:465
+#, python-format
+msgid "处理文件: %s"
+msgstr "Processing file: %s"
+
+#: main.py:469
+#, python-format
+msgid "无法从文件名 %s 中提取ID"
+msgstr "Failed to extract ID from filename %s"
+
+#: main.py:472
+#, python-format
+msgid "提取到ID: %s"
+msgstr "Extracted ID: %s"
+
+#: main.py:480
+#, python-format
+msgid "作品信息格式无效: %s"
+msgstr "Invalid artwork info format: %s"
+
+#: main.py:484
+msgid "无标题"
+msgstr "Untitled"
+
+#: main.py:485
+msgid "未知用户"
+msgstr "Unknown user"
+
+#: main.py:514
+#, python-format
+msgid "文件已存在，跳过: %s"
+msgstr "File exists, skipping: %s"
+
+#: main.py:517
+#, python-format
+msgid "文件路径：%s"
+msgstr "File path: %s"
+
+#: main.py:518
+#, python-format
+msgid "目标路径：%s"
+msgstr "Target path: %s"
+
+#: main.py:522
+#, python-format
+msgid "文件已复制到: %s"
+msgstr "File copied to: %s"
+
+#: main.py:527
+#, python-format
+msgid ""
+"错误详情:\n"
+"%s"
+msgstr ""
+"Error details:\n"
+"%s"
+
+#: main.py:548
+msgid "正则表达式无效，尝试使用自定义正则表达式"
+msgstr "Invalid regex, trying custom pattern"
+
+#: main.py:558
+msgid "自定义正则表达式无效"
+msgstr "Invalid custom regex"
+
+#: main.py:566
+msgid "未设置Pixiv Cookie"
+msgstr "Pixiv Cookie not set"
+
+#: main.py:585
+#, python-format
+msgid "等待 %.2f 秒后重试..."
+msgstr "Waiting %.2f seconds before retry..."
+
+#: main.py:617
+#, python-format
+msgid "API请求异常: %s: %s"
+msgstr "API request exception: %s: %s"
+
+#: main.py:639
+#, python-format
+msgid "请求过于频繁，Pixiv要求等待 %d 秒 (HTTP 429)"
+msgstr "Too many requests, Pixiv requires waiting %d seconds (HTTP 429)"
+
+#: main.py:648
+#, python-format
+msgid "服务器错误: HTTP %d"
+msgstr "Server error: HTTP %d"
+
+#: main.py:650
+#, python-format
+msgid "客户端错误: HTTP %d"
+msgstr "Client error: HTTP %d"
+
+#: main.py:657
+msgid "API返回数据格式无效"
+msgstr "Invalid API response format"
+
+#: main.py:660
+#, python-format
+msgid "API错误: %s"
+msgstr "API error: %s"
+
+#: main.py:660
+msgid "未知错误"
+msgstr "Unknown error"
+
+#: main.py:664
+msgid "API返回无效的JSON数据"
+msgstr "API returned invalid JSON data"
+
+#: main.py:669
+msgid "无响应"
+msgstr "No response"
+
+#: main.py:671
+#, python-format
+msgid "获取作品 %s 信息失败 (最终状态: %s)"
+msgstr "Failed to get artwork %s info (final status: %s)"
+
+#: main.py:678
+msgid "无效的作品信息数据"
+msgstr "Invalid artwork info data"
+
+#: main.py:733
+#, python-format
+msgid "警告: 配置中要求的变量 %s 不存在于API返回数据中"
+msgstr "Warning: Required variable %s not found in API response"
+
+#: main.py:750
+#, python-format
+msgid "构建路径失败: %s"
+msgstr "Failed to build path: %s"

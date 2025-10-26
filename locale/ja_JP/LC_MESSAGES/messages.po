@@ -1,0 +1,366 @@
+# Japanese translations for v1.0.0 package
+# v1.0.0 パッケージに対する英訳.
+# Copyright (C) 2025 THE v1.0.0'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the v1.0.0 package.
+# 3WLRF25 tlms3wlrf25@outlook.com, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-25 21:39+0800\n"
+"PO-Revision-Date: 2025-10-25 23:02+0800\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: main.py:29 main.py:301
+msgid "PixSense - Pixiv图片分类整理工具"
+msgstr "PixSense - Pixiv画像分類整理ツール"
+
+#: main.py:79
+#, python-format
+msgid "已清空日志文件: %s"
+msgstr "ログファイルをクリアしました: %s"
+
+#: main.py:81
+#, python-format
+msgid "清空日志文件失败: %s"
+msgstr "ログファイルのクリアに失敗しました: %s"
+
+#: main.py:87
+msgid "源图片目录"
+msgstr "ソース画像ディレクトリ"
+
+#: main.py:97 main.py:114
+msgid "选择目录"
+msgstr "ディレクトリを選択"
+
+#: main.py:104
+msgid "目标目录"
+msgstr "ターゲットディレクトリ"
+
+#: main.py:121
+msgid "文件名规则 (用于提取ID)"
+msgstr "ファイル名規則 (ID抽出用)"
+
+#: main.py:123
+#, python-brace-format
+msgid "如: {id} 或 {title}▪︎{id}｜{user}等"
+msgstr "例: {id} または {title}▪︎{id}｜{user}など"
+
+#: main.py:129
+msgid "ID提取正则表达式"
+msgstr "ID抽出正規表現"
+
+#: main.py:131
+msgid "如: (\\d+) 或 id_(\\d+)"
+msgstr "例: (\\d+) または id_(\\d+)"
+
+#: main.py:137
+msgid "文件夹结构"
+msgstr "フォルダ構造"
+
+#: main.py:139
+#, python-brace-format
+msgid "如: {user}/{title} 或 {user_id}/{date}/{tags[0]}"
+msgstr "例: {user}/{title} または {user_id}/{date}/{tags[0]}"
+
+#: main.py:145
+msgid "Pixiv Cookie (PHPSESSID=...)"
+msgstr "Pixiv Cookie (PHPSESSID=...)"
+
+#: main.py:154
+msgid "支持的图片扩展名 (逗号分隔)"
+msgstr "対応画像拡張子 (カンマ区切り)"
+
+#: main.py:156
+msgid "如: .jpg, .png, .jpeg"
+msgstr "例: .jpg, .png, .jpeg"
+
+#: main.py:162
+msgid "覆盖已存在的文件"
+msgstr "既存ファイルを上書き"
+
+#: main.py:168
+msgid "最大重试次数"
+msgstr "最大リトライ回数"
+
+#: main.py:175
+msgid "基础延迟(秒)"
+msgstr "基本遅延(秒)"
+
+#: main.py:182
+msgid "最大延迟(秒)"
+msgstr "最大遅延(秒)"
+
+#: main.py:189
+msgid "指数退避"
+msgstr "指数バックオフ"
+
+#: main.py:196
+msgid "启用后，每次重试的等待时间会指数级增长（基础延迟×2^重试次数）"
+msgstr "有効にすると、リトライごとに待機時間が指数関数的に増加します（基本遅延×2^リトライ回数）"
+
+#: main.py:200
+msgid "随机抖动"
+msgstr "ランダムジッター"
+
+#: main.py:207
+msgid "启用后，会在重试延迟上添加随机时间（0-1秒），避免多个请求同时重试"
+msgstr "有効にすると、リトライ遅延にランダム時間（0-1秒）が追加され、複数リクエストの同時リトライを防ぎます"
+
+#: main.py:211
+msgid "429重试"
+msgstr "429リトライ"
+
+#: main.py:218
+msgid "启用后，当收到429(请求过多)响应时会自动等待并重试"
+msgstr "有効にすると、429(リクエスト過多)応答時に自動待機してリトライします"
+
+#: main.py:222
+msgid "超时重试"
+msgstr "タイムアウトリトライ"
+
+#: main.py:229
+msgid "启用后，当请求超时会自动重试"
+msgstr "有効にすると、リクエストタイムアウト時に自動リトライします"
+
+#: main.py:233
+msgid "线程数"
+msgstr "スレッド数"
+
+#: main.py:243
+msgid "开始整理"
+msgstr "整理を開始"
+
+#: main.py:249
+msgid "保存配置"
+msgstr "設定を保存"
+
+#: main.py:255
+msgid "记录日志到文件"
+msgstr "ログをファイルに記録"
+
+#: main.py:260
+msgid "日志文件路径"
+msgstr "ログファイルパス"
+
+#: main.py:266
+msgid "日志级别"
+msgstr "ログレベル"
+
+#: main.py:280
+msgid "启动时清空日志"
+msgstr "起動時にログをクリア"
+
+#: main.py:285
+msgid "手动清空日志"
+msgstr "手動でログをクリア"
+
+#: main.py:292
+msgid "标签连接符"
+msgstr "タグ連結文字"
+
+#: main.py:294
+msgid "如: , 或 -"
+msgstr "例: , または -"
+
+#: main.py:308
+msgid "标签配置:"
+msgstr "タグ設定:"
+
+#: main.py:314
+msgid "重试配置:"
+msgstr "リトライ設定:"
+
+#: main.py:339
+msgid "日志输出:"
+msgstr "ログ出力:"
+
+#: main.py:384
+msgid "配置已保存!"
+msgstr "設定を保存しました!"
+
+#: main.py:386
+#, python-format
+msgid "保存配置失败: %s"
+msgstr "設定の保存に失敗しました: %s"
+
+#: main.py:411
+#, python-format
+msgid "无法写入日志文件: %s"
+msgstr "ログファイルに書き込めません: %s"
+
+#: main.py:421
+#, python-format
+msgid "加载配置失败: %s"
+msgstr "設定の読み込みに失敗しました: %s"
+
+#: main.py:430
+msgid "错误: 源目录无效或未设置"
+msgstr "エラー: ソースディレクトリが無効または未設定です"
+
+#: main.py:434
+msgid "错误: 目标目录未设置"
+msgstr "エラー: ターゲットディレクトリが未設定です"
+
+#: main.py:438
+msgid "警告: 未设置Pixiv Cookie，可能无法获取详细信息"
+msgstr "警告: Pixiv Cookieが未設定のため、詳細情報を取得できない可能性があります"
+
+#: main.py:443
+msgid "开始扫描源目录..."
+msgstr "ソースディレクトリのスキャンを開始..."
+
+#: main.py:450
+#, python-format
+msgid "找到 %d 个图片文件"
+msgstr "%d個の画像ファイルが見つかりました"
+
+#: main.py:457 main.py:525
+#, python-format
+msgid "处理文件 %s 时出错: %s"
+msgstr "ファイル %s の処理中にエラーが発生しました: %s"
+
+#: main.py:459
+msgid "整理完成!"
+msgstr "整理が完了しました!"
+
+#: main.py:465
+#, python-format
+msgid "处理文件: %s"
+msgstr "ファイルを処理中: %s"
+
+#: main.py:469
+#, python-format
+msgid "无法从文件名 %s 中提取ID"
+msgstr "ファイル名 %s からIDを抽出できませんでした"
+
+#: main.py:472
+#, python-format
+msgid "提取到ID: %s"
+msgstr "IDを抽出しました: %s"
+
+#: main.py:480
+#, python-format
+msgid "作品信息格式无效: %s"
+msgstr "作品情報の形式が無効です: %s"
+
+#: main.py:484
+msgid "无标题"
+msgstr "無題"
+
+#: main.py:485
+msgid "未知用户"
+msgstr "不明なユーザー"
+
+#: main.py:514
+#, python-format
+msgid "文件已存在，跳过: %s"
+msgstr "ファイルが既に存在するためスキップします: %s"
+
+#: main.py:517
+#, python-format
+msgid "文件路径：%s"
+msgstr "ファイルパス：%s"
+
+#: main.py:518
+#, python-format
+msgid "目标路径：%s"
+msgstr "ターゲットパス：%s"
+
+#: main.py:522
+#, python-format
+msgid "文件已复制到: %s"
+msgstr "ファイルをコピーしました: %s"
+
+#: main.py:527
+#, python-format
+msgid ""
+"错误详情:\n"
+"%s"
+msgstr ""
+"エラー詳細:\n"
+"%s"
+
+#: main.py:548
+msgid "正则表达式无效，尝试使用自定义正则表达式"
+msgstr "正規表現が無効です、カスタム正規表現を試します"
+
+#: main.py:558
+msgid "自定义正则表达式无效"
+msgstr "カスタム正規表現が無効です"
+
+#: main.py:566
+msgid "未设置Pixiv Cookie"
+msgstr "Pixiv Cookieが未設定です"
+
+#: main.py:585
+#, python-format
+msgid "等待 %.2f 秒后重试..."
+msgstr "%.2f秒待機してからリトライ..."
+
+#: main.py:617
+#, python-format
+msgid "API请求异常: %s: %s"
+msgstr "APIリクエスト例外: %s: %s"
+
+#: main.py:639
+#, python-format
+msgid "请求过于频繁，Pixiv要求等待 %d 秒 (HTTP 429)"
+msgstr "リクエストが頻繁すぎます、Pixivは%d秒の待機を要求しています (HTTP 429)"
+
+#: main.py:648
+#, python-format
+msgid "服务器错误: HTTP %d"
+msgstr "サーバーエラー: HTTP %d"
+
+#: main.py:650
+#, python-format
+msgid "客户端错误: HTTP %d"
+msgstr "クライアントエラー: HTTP %d"
+
+#: main.py:657
+msgid "API返回数据格式无效"
+msgstr "APIが返したデータ形式が無効です"
+
+#: main.py:660
+#, python-format
+msgid "API错误: %s"
+msgstr "APIエラー: %s"
+
+#: main.py:660
+msgid "未知错误"
+msgstr "不明なエラー"
+
+#: main.py:664
+msgid "API返回无效的JSON数据"
+msgstr "APIが無効なJSONデータを返しました"
+
+#: main.py:669
+msgid "无响应"
+msgstr "応答なし"
+
+#: main.py:671
+#, python-format
+msgid "获取作品 %s 信息失败 (最终状态: %s)"
+msgstr "作品 %s の情報取得に失敗しました (最終ステータス: %s)"
+
+#: main.py:678
+msgid "无效的作品信息数据"
+msgstr "無効な作品情報データ"
+
+#: main.py:733
+#, python-format
+msgid "警告: 配置中要求的变量 %s 不存在于API返回数据中"
+msgstr "警告: 設定で要求された変数 %s がAPI返却データに存在しません"
+
+#: main.py:750
+#, python-format
+msgid "构建路径失败: %s"
+msgstr "パスの構築に失敗しました: %s"
