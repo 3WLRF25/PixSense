@@ -3,24 +3,11 @@ import flet as ft
 from typing import Any, Optional, Dict, List
 from pathlib import Path
 from datetime import datetime
+
+import init
+init.Init()
+
 from enum import IntEnum
-
-import gettext,locale,sys,io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-system_lang = locale.getlocale()[0]
-system_lang = 'zh_TW'
-locale_dir = os.path.join(os.path.dirname(__file__), 'locale')
-try:
-    trans = gettext.translation(
-        'messages', 
-        locale_dir, 
-        languages=[system_lang] if system_lang else None,
-    )
-    trans.install()
-except FileNotFoundError:
-    gettext.install('messages', locale_dir)
-
-
 class llv(IntEnum):
     DEBUG = 0
     INFO = 1
@@ -28,7 +15,7 @@ class llv(IntEnum):
     ERROR = 3
     CRITICAL = 4   
     def __str__(self):
-        return self.name    
+        return self.name
     
 class PixivImageOrganizer:
     def __init__(self, page: ft.Page):
@@ -38,7 +25,6 @@ class PixivImageOrganizer:
         self.page.window_height = 700
         self.page.scroll = "adaptive"
         
-        # 先初始化log_output
         self.log_output = ft.ListView(expand=True, spacing=10)  
 
         # 配置项
@@ -386,7 +372,7 @@ class PixivImageOrganizer:
         })
         
         try:
-            with open("pixiv_organizer_config.json", "w", encoding="utf-8") as f:
+            with open("config.json", "w", encoding="utf-8") as f:
                 json.dump(self.config, f, ensure_ascii=False, indent=4)
             self.log(_("配置已保存!"), llv.INFO)
         except Exception as e:
@@ -420,8 +406,8 @@ class PixivImageOrganizer:
     def loadc(self):
         """加载保存的配置"""
         try:
-            if os.path.exists("pixiv_organizer_config.json"):
-                with open("pixiv_organizer_config.json", "r", encoding="utf-8") as f:
+            if os.path.exists("config.json"):
+                with open("config.json", "r", encoding="utf-8") as f:
                     loaded_config = json.load(f)
                     self.config.update(loaded_config)
         except Exception as e:
@@ -798,4 +784,5 @@ class PixivImageOrganizer:
 def main(page: ft.Page):
     PixivImageOrganizer(page)
 
-ft.app(target=main)
+if __name__ == "__main__":
+    ft.app(target=main)
